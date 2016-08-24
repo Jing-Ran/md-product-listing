@@ -143,7 +143,7 @@
         removeBtn.onclick = function() {
             var temp;
             shoppingBag.removeChild(row);
-            delete itemsInBag[productId];
+            delete itemsInBag[removeBtn.value];
             // calculateTotalPr();
             temp = calculateTotalPr();
             totalOriginalPr.innerHTML = "$" + temp[0].toFixed(2);
