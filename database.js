@@ -9,7 +9,7 @@
         color: "blue",
         price: 59.99,
         discountPr: 59.99,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "clothing"
     };
 
@@ -20,7 +20,7 @@
         color: "black",
         price: 49.99,
         discountPr: 49.99,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "clothing"
     };
 
@@ -31,7 +31,7 @@
         color: "grey",
         price: 109,
         discountPr: 85.99,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "clothing"
     };
 
@@ -42,7 +42,7 @@
         color: "indigo",
         price: 80,
         discountPr: 65.99,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "clothing"
     };
 
@@ -53,7 +53,7 @@
         color: "red",
         price: 499,
         discountPr: 499,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "bag"
     };
 
@@ -64,7 +64,7 @@
         color: "black",
         price: 359,
         discountPr: 309.99,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "shoe"
     };
 
@@ -75,7 +75,7 @@
         color: "pink",
         price: 299,
         discountPr: 299,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "shoe"
     };
 
@@ -87,7 +87,7 @@
         color: "brown",
         price: 199,
         discountPr: 199,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "accessory"
     };
 
@@ -98,7 +98,7 @@
         color: "plaid",
         price: 29,
         discountPr: 18.99,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "accessory"
     };
 
@@ -109,7 +109,7 @@
         color: "camel",
         price: 599,
         discountPr: 450.99,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "clothing"
     };
 
@@ -120,7 +120,7 @@
         color: "camel",
         price: 559,
         discountPr: 409.99,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "clothing"
     };
 
@@ -131,7 +131,7 @@
         color: "navy",
         price: 165,
         discountPr: 98.99,
-        image: "http://placehold.it/100x100",
+        imageUrl: "http://placehold.it/100x100",
         category: "accessory"
     };
 

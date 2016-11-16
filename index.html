@@ -3,46 +3,60 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Products</title>
-	<link rel="stylesheet" type="text/css" href="product-listing.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="icon-font-style.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,200,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<a name="top"></a>
 
+	<!--shopping page-->
 	<div id="shopping-page">
-		<div class="header">
-			<div class="left-hd">
-				<p>Free shipping &amp; Free returns within the US</p>
-			</div>
-			<div class="logo">
-				<img src="http://placehold.it/350x50?text=logo">
-			</div>
-			<div class="right-hd">
-				<!-- NEED A LINK TO SIGNUP FORM-->
-				<a href="" target="_blank">sign in | register</a>
-			</div>
-		</div>
+		<header>
+      <div class="header-top">
+        <div class="header-top-left">
+          <p>Free shipping &amp; Free returns within the US</p>
+        </div>
+        <div class="header-top-logo">
+          <img src="http://placehold.it/350x50?text=logo">
+        </div>
+        <div class="header-top-login">
+          <!-- NEED A LINK TO SIGNUP FORM-->
+          <a href="#" target="_blank">sign in | register</a>
+        </div>
 
-		<div class="body">
-			<div class="top-menu">
-				<ul class="top-menu-list">
-					<li class="top-menu-item"><a href="#">Designers</a></li>
-					<li class="top-menu-item current"><a href="#">Women</a></li>
-					<li class="top-menu-item"><a href="#">Men</a></li>
-					<li class="top-menu-item"><a href="#">Sales</a></li>
-				</ul>
+        <!-- shopping bag icon -->
+        <div class="header-top-bag">
+          <button id="open-bag-btn" type="button" name="open-bag"
+                  onclick="showBag()">
+            <span class="icon-cart"></span>
+            <span id="item-num">0</span>
+          </button>
+        </div>
+        <p id="empty-bag-msg" class="hidden">Your shopping cart is empty.</p>
+      </div>
 
-				<form method="get" class="search-bar">
-					<input type="search" name="insite-search" placeholder="search">
-				</form>
-			</div>
+      <div class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item"><a href="#">Designers</a></li>
+          <li class="header-nav-item current"><a href="#">Women</a></li>
+          <li class="header-nav-item"><a href="#">Men</a></li>
+          <li class="header-nav-item"><a href="#">Sales</a></li>
+          <li class="header-nav-item">
+            <input type="search" name="insite-search" placeholder="search"
+            id="input-search">
+          </li>
+        </ul>
+      </div>
+		</header>
 
-			<hr class="top-menu-hr">
-
-			<div class="left-bar">
-				<ul class="side-menu">
-					<li class="current"><a href="#">Clothing</a>
-						<ul>
+		<div class="shopping-body">
+      <!--left-side nav bar-->
+			<div class="left-nav">
+				<ul class="left-nav-top">
+					<li class="current">
+            <a href="#">Clothing</a>
+						<ul class="left-nav-top-sub">
 							<li><a href="#">Coats</a></li>
 							<li><a href="#">Dresses</a></li>
 							<li><a href="#">Pants &amp; Shorts</a></li>
@@ -56,39 +70,38 @@
 					<li><a href="#">Accessories</a></li>
 					<li><a href="#">Sales</a></li>
 				</ul>
-				<hr class="left-bar-hr">
+				<hr class="left-nav-hr">
 
-				<div class="size-bar">
+				<div class="left-nav-bottom">
 					<form method="get">
-						<label><span>Size</span><br>
-							<input type="checkbox" id="cb1" value="xxs" name="size">
-							<label for="cb1">XXS</label><br>
+						<p>Size</p>
+            <input type="checkbox" id="cb1" value="xxs" name="size">
+            <label for="cb1">XXS</label><br>
 
-							<input type="checkbox" id="cb2" value="xs" name="size">
-							<label for="cb2">XS</label><br>
+            <input type="checkbox" id="cb2" value="xs" name="size">
+            <label for="cb2">XS</label><br>
 
-							<input type="checkbox" id="cb3" value="s" name="size">
-							<label for="cb3">S</label><br>
+            <input type="checkbox" id="cb3" value="s" name="size">
+            <label for="cb3">S</label><br>
 
-							<input type="checkbox" id="cb4" value="m" name="size">
-							<label for="cb4">M</label><br>
+            <input type="checkbox" id="cb4" value="m" name="size">
+            <label for="cb4">M</label><br>
 
-							<input type="checkbox" id="cb5" value="l" name="size">
-							<label for="cb5">L</label><br>
+            <input type="checkbox" id="cb5" value="l" name="size">
+            <label for="cb5">L</label><br>
 
-							<input type="checkbox" id="cb6" value="xl" name="size">
-							<label for="cb6">XL</label><br>
+            <input type="checkbox" id="cb6" value="xl" name="size">
+            <label for="cb6">XL</label><br>
 
-							<input type="checkbox" id="cb7" value="xxl" name="size">
-							<label for="cb7">XXL</label><br>
+            <input type="checkbox" id="cb7" value="xxl" name="size">
+            <label for="cb7">XXL</label><br>
 
-							<input type="submit" name="sumit" value="Apply">
-						</label>
+            <input type="submit" name="submit" value="Apply">
 					</form>
 				</div>
 			</div>
 
-			<div class="main">
+			<div class="main-body">
 				<div class="row row1">
 					<div class="col col1">
 						<a href="#">
@@ -223,7 +236,8 @@
 			</div>
 		</div>
 
-		<div class="footer">
+    <!--footer of shopping page-->
+		<footer class="footer">
 			<div class="footer-col1">
 				<p class="ft-title">HELP</p>
 				<ul>
@@ -246,57 +260,51 @@
 				<a href="#" target="_blank"><img src="http://www.uj.ac.za/corporateservices/centres/uj-sport/PublishingImages/Pages/default/twitter-3-256.png" alt="twitter"></a>
 				<a href="#" target="_blank"><img src="https://advancement.ridleycollege.com/image/instagram-512.gif" alt="instagram"></a>
 			</div>
-		</div>
+		</footer>
 
 		<a href="#top" class="back-to-top"><span>↑</span></a>
-
-		<p id="empty-bag-msg">Your bag is empty.</p>
-		<button id="open-bag-btn" type="button" name="open-bag" onclick="showBag()">SHOPPING BAG&nbsp;<img src="http://www.frauleinannie.com/templates/EyeCandy/img/icons/icon-grey-basket-big.png" alt="shopping bag">
-		</button>
 	</div>
 
+  <!--opened shopping bag-->
 	<div id="opened-bag">
-		<button id="close" type="button" name="close-bag" onclick="closeBag()">╳</button>
+		<button id="close" type="button" name="close-bag">╳</button>
 		<div class="shopping-bag-header">
 			<h2>My Shopping Bag</h2>
-			<button id="cont-shopping" type="button" name="cont-shopping" onclick="closeBag()"><span>Continue Shopping</span></button>
+			<button id="cont-shopping" type="button" name="cont-shopping"><span>Continue Shopping</span></button>
 			<button id="checkout" type="button" name="checkout"><span>Checkout</span></button>
 		</div>
 
-		<div id="wrap">
-			<table id="products-in-bag">
+    <!--to show items that are added to bag-->
+    <table id="items-in-bag">
 
-			</table>
-		</div>
+    </table>
 
-
-
-		<!-- summary of shopping cart -->
+		<!-- summary of shopping bag -->
 		<table id="total">
 			<tr class="first-row">
 				<td class="narrow-col">Promotion Code</td>
 				<td class="wide-col">
-                    <input id="promo-input" type="text" name="promo" placeholder="enter a promotion code" value="" autocomplete="off">
-                    <!--<input id="apply-promo" type="submit" name="submit-promo" value="Apply">-->
-                    <button id="apply-promo" type="button" name="apply-promo" value="apply">Apply</button>
+          <input id="promo-input" type="text" name="promo" placeholder="enter a promotion code" value="" autocomplete="off">
+          <!--<input id="apply-promo" type="submit" name="submit-promo" value="Apply">-->
+          <button id="apply-promo" type="button" name="apply-promo" value="apply">Apply</button>
 				</td>
 				<td class="narrow-col">Order Total:</td>
 				<td class="narrow-col">
 					<p id="total-original"></p>
 				</td>
 			</tr>
-            <tr>
-                <td class="narrow-col"></td>
-                <td class="wide-col">
-                    <p id="invalid-info"></p>
-                </td>
-                <td class="narrow-col">
-                    <p id="show-current-promo"></p>
-                </td>
-                <td class="narrow-col">
-                    <p id="total-promo"></p>
-                </td>
-            </tr>
+      <tr>
+        <td class="narrow-col"></td>
+        <td class="wide-col">
+          <p id="invalid-info"></p>
+        </td>
+        <td class="narrow-col">
+          <p id="show-current-promo"></p>
+        </td>
+        <td class="narrow-col">
+          <p id="total-promo"></p>
+        </td>
+      </tr>
 		</table>
 	</div>
 
